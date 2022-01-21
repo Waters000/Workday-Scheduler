@@ -1,1 +1,20 @@
 /* Style sheet */
+
+
+.past {
+    background-color: #ff0000;
+    color: white;
+  }
+  
+  .present {
+    background-color: #61f4ff;
+    color: white;
+  }
+  
+  .future {
+    background-color: #77dd77;
+    color: white;
+  }
+  .saveBtn {
+      background-color:rgb(121, 120, 121);
+  }
