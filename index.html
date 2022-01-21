@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workday Scheduler</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+
+
+</head>
+
+<body>
+
+    <div class="row min-vh-100 no-gutters">
+
+
+
+        <header class="col-12 col-lg-2 bg-dark text-light sticky-top d-flex flex-column p-2 p-lg-2">
+            <h1 class="text-center"><span class="oi oi-task d-inline d-lg-none"></span>Workday Scheduler</h1>
+            <h4 id="today"></h4>
+            <p class="d-none d-lg-block">Workday Scheduler HERE
+            </p>
+        </header>
+
+
+
+        <div class="container">
+            <h4 class="text-center border border-success">The Date is <span id="day"></span> <br >Add your plans to each description</h4>
+
+            <div id="hour8" class="row time-block">
+                <div class="hour card-header text-light col-md-1 hour bg-dark">8 AM</div>
+                <input class="description col-md-10 border border-primary"><div class="inputdiv" ></div></input>
+                <button class="saveBtn col-md-1">Save</button>
+            </div>
+
+            <div id="hour9" class="row time-block">
+                <div class="hour card-header text-light col-md-1 hour bg-dark">9 AM</div>
+                <input class="description col-md-10 border border-primary"><div class="inputdiv" ></div></input>
+                <button class="saveBtn col-md-1">Save</button>
+            </div>
+
+            <div id="hour10" class="row time-block">
+                <div class="hour card-header text-light col-md-1 hour bg-dark">10 AM</div>
+                <input class="description col-md-10 border border-primary"><div class="inputdiv" ></div></input>
+                <button class="saveBtn col-md-1">Save</button>
+            </div>
+
+            <div id="hour11" class="row time-block">
+                <div class="hour card-header text-light col-md-1 hour bg-dark">11 AM</div>
+                <input class="description col-md-10 border border-primary"><div class="inputdiv" ></div></input>
+                <button class="saveBtn col-md-1">Save</button>
+            </div>
+
+            <div id="hour12" class="row time-block">
+                <div class="hour card-header text-light col-md-1 hour bg-dark">12 PM</div>
+                <input class="description col-md-10 border border-primary"><div class="inputdiv" ></div></input>
+                <button class="saveBtn col-md-1">Save</button>
+            </div>
+
+            <div id="hour13" class="row time-block">
+                <div class="hour card-header text-light col-md-1 hour bg-dark">1 PM</div>
+                <input class="description col-md-10 border border-primary"><div class="inputdiv" ></div></input>
+                <button class="saveBtn col-md-1">Save</button>
+            </div>
+
+            <div id="hour14" class="row time-block">
+                <div class="hour card-header text-light col-md-1 hour bg-dark">2 PM</div>
+                <input class="description col-md-10 border border-primary"><div class="inputdiv" ></div></input>
+                <button class="saveBtn col-md-1">Save</button>
+            </div>
+
+            <div id="hour15" class="row time-block">
+                <div class="hour card-header text-light col-md-1 hour bg-dark">3 PM</div>
+                <input class="description col-md-10 border border-primary"><div class="inputdiv" ></div></input>
+                <button class="saveBtn col-md-1">Save</button>
+            </div>
+
+            <div id="hour16" class="row time-block">
+                <div class="hour card-header text-light col-md-1 hour bg-dark">4 PM</div>
+                <input class="description col-md-10 border border-primary"><div class="inputdiv" ></div></input>
+                <button class="saveBtn col-md-1">Save</button>
+            </div>
+
+            <div id="hour17" class="row time-block">
+                <div class="hour card-header text-light col-md-1 hour bg-dark">5 PM</div>
+                <input class="description col-md-10 border border-primary"><div class="inputdiv" ></div></input>
+                <button class="saveBtn col-md-1">Save</button>
+            </div>
+
+            <div id="hour18" class="row time-block">
+                <div class="hour card-header text-light col-md-1 hour bg-dark">6 PM</div>
+                <input class="description col-md-10 border border-primary"><div class="inputdiv" ></div></input>
+                <button class="saveBtn col-md-1">Save</button>
+            </div>
+
+            <div id="hour19" class="row time-block">
+                <div class="hour card-header text-light col-md-1 hour bg-dark">7 PM</div>
+                <input class="description col-md-10 border border-primary"><div class="inputdiv" ></div></input>
+                <button class="saveBtn col-md-1">Save</button>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
