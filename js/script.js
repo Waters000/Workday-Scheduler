@@ -2,14 +2,35 @@
 
 var colorEl = document.getElementById('color');
 
+
+$(document).ready(function() {
+$(".nextBtn").on("click", function(){ 
+     dateNow = moment().add(1,'days');
+     $("#today").text(dateNow);
+})
+})
+
+$(document).ready(function() {
+    $(".nextMonth").on("click", function(){ 
+         dateNow = moment().add(1,'month');
+         $("#today").text(dateNow);
+    })
+    })
+
+$('a.printPage').click(function(){
+    window.print();
+    return false;
+});
+
+
+
 var dateNow = moment().format('dddd - MMM Do YY');
 $("#today").text(dateNow);
 
 var dayNow = moment().format("MMM Do YY h:mm:ss");
 $("#day").text(dayNow);
 
- 
-
+var nextDay = moment().add(1,'days');
 
 /// set up save button to listen to click and save item in description
 
