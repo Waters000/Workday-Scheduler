@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Workday Scheduler</title>
-    <link rel="stylesheet" href="./assets/style.css" />
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
-    
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
 
 
 </head>
@@ -22,88 +22,101 @@
 
 
 
-        <header class="col-12 col-lg-2 bg-dark text-light sticky-top d-flex flex-column p-2 p-lg-2">
-            <h1 class="text-center"><span class="oi oi-task d-inline d-lg-none"></span>Workday Scheduler</h1>
-            <h4 id="today"></h4>
-            <p class="d-none d-lg-block">Workday Scheduler HERE
+        <header class="col-12 col-lg-12 bg-dark text-light sticky-top d-flex flex-column p-2 p-lg-2 text-center">
+            <h1 class="text-center"><span class="oi oi-task d-inline "></span> Workday Scheduler</h1>
+            <div class="justify-content-center row "><h4 class="text-center" id="today"></h4><button id="nextBtn" class="ml-3 nextBtn">Next Day</button></div>
             </p>
         </header>
 
 
 
         <div class="container">
-            <h4 class="text-center border border-success">The Date is <span id="day"></span> <br >Add your plans to each description</h4>
+            <h4 class="text-center border border-5 border-success">Date & Time is: <span id="day"></span> <br>Add your plans to each
+                description</h4>
 
-            <div id="hour8" class="time-block  row ">
-                <div  class="hour card-header text-light col-md-1">8 AM</div>
-                <input  class="color description col-md-10 "></input>
-                <button id="saveBtn" class=" btn-lg saveBtn  col-md-1">Save</button>
+            <div id="hour8" class="rounded m-2 p-2 border border-success time-block  row ">
+                <div class="hour card-header text-light col-md-1 hour  ">8 AM</div>
+                <input type="text" placeholder="add your text" id="sort" class="input  description col-md-10 "></input>
+                <button id="saveBtn" class="saveBtn rounded-right save col-md-1"><span
+                        class="oi oi-data-transfer-upload"></span> Save</button>
+
             </div>
 
-            <div id="hour9" class="row time-block ">
-                <div  class="hour card-header text-light col-md-1 ">9 AM</div>
-                <input  class="description col-md-10 "></input>
-                <button id="saveBtn" class="saveBtn col-md-1">Save</button>
+            <div id="hour9" class="rounded m-2 p-2 row time-block ">
+                <div class="hour card-header text-light col-md-1 hour ">9 AM</div>
+                <input type="text" placeholder="add your text" id="sort" class="description col-md-10 "></input>
+                <button id="saveBtn" class="saveBtn rounded-right save col-md-1"><span
+                        class="oi oi-data-transfer-upload"></span> Save</button>
             </div>
 
-            <div id="hour10" class="row time-block">
-                <div  class="hour card-header text-light col-md-1 hour ">10 AM</div>
-                <input class="description col-md-10 "></input>
-                <button id="saveBtn" class="saveBtn col-md-1">Save</button>
+            <div id="hour10" class="rounded m-2 p-2 row time-block">
+                <div class="hour card-header text-light col-md-1 hour ">10 AM</div>
+                <input type="text" placeholder="add your text" id="sort" class="description col-md-10 "></input>
+                <button id="saveBtn" class="saveBtn rounded-right save col-md-1"><span
+                        class="oi oi-data-transfer-upload"></span> Save</button>
             </div>
 
-            <div id="hour11" class="row time-block">
+            <div id="hour11" class="rounded align-center m-2 p-2 row time-block">
                 <div class="hour card-header text-light col-md-1 hour ">11 AM</div>
-                <input class="description col-md-10 "></input>
-                <button id="saveBtn" class="saveBtn col-md-1">Save</button>
+                <input type="text" placeholder="add your text" class="description col-md-10 "></input>
+                <button id="saveBtn" class="saveBtn rounded-right save col-md-1"><span
+                        class="oi oi-data-transfer-upload"></span> Save</button>
             </div>
 
-            <div id="hour12" class="row time-block">
+            <div id="hour12" class="rounded m-2 p-2 row time-block">
                 <div class="hour card-header text-light col-md-1 hour ">12 PM</div>
-                <input class="description col-md-10 "></input>
-                <button id="saveBtn" class="saveBtn col-md-1">Save</button>
+                <input type="text" placeholder="add your text" class="description col-md-10 "></input>
+                <button id="saveBtn" class="saveBtn rounded-right save col-md-1"><span
+                        class="oi oi-data-transfer-upload"></span> Save</button>
             </div>
 
-            <div id="hour13" class="row time-block">
+            <div id="hour13" class="rounded m-2 p-2 row time-block">
                 <div class="hour card-header text-light col-md-1 hour">1 PM</div>
-                <input class="description col-md-10 "></input>
-                <button id="saveBtn" class="saveBtn col-md-1">Save</button>
+                <input type="text" placeholder="add your text" class="description col-md-10 "></input>
+                <button id="saveBtn" class="saveBtn rounded-right save col-md-1"><span
+                        class="oi oi-data-transfer-upload"></span> Save</button>
             </div>
 
-            <div id="hour14" class="row time-block">
+            <div id="hour14" class="rounded m-2 p-2 row time-block">
                 <div class="hour card-header text-light col-md-1 hour">2 PM</div>
-                <input class="description col-md-10 "></input>
-                <button id="saveBtn" class="saveBtn col-md-1">Save</button>
+                <input type="text" placeholder="add your text" class="description col-md-10 "></input>
+                <button id="saveBtn" class="saveBtn rounded-right save col-md-1"><span
+                        class="oi oi-data-transfer-upload"></span> Save</button>
             </div>
 
-            <div id="hour15" class="row time-block">
+            <div id="hour15" class="rounded m-2 p-2 row time-block">
                 <div class="hour card-header text-light col-md-1 hour ">3 PM</div>
-                <input class="description col-md-10 "></input>
-                <button id="saveBtn" class="saveBtn col-md-1">Save</button>
+                <input type="text" placeholder="add your text" class="description col-md-10 "></input>
+                <button id="saveBtn" class="saveBtn rounded-right save col-md-1"> <span
+                        class="oi oi-data-transfer-upload"></span>Save</button>
             </div>
 
-            <div id="hour16" class="row time-block">
+            <div id="hour16" class="rounded m-2 p-2 row time-block">
                 <div class="hour card-header text-light col-md-1 hour ">4 PM</div>
-                <input class="description col-md-10 y"></input>
-                <button class="saveBtn col-md-1">Save</button>
+                <input type="text" placeholder="add your text" class="description col-md-10 y"></input>
+                <button class="saveBtn rounded-right save col-md-1"><span class="oi oi-data-transfer-upload"></span>
+                    Save</button>
             </div>
 
-            <div id="hour17" class="row time-block">
+            <div id="hour17" class="rounded m-2 p-2 row time-block">
                 <div class="hour card-header text-light col-md-1 hour">5 PM</div>
-                <input class="description col-md-10 "></input>
-                <button class="saveBtn col-md-1">Save</button>
+                <input type="text" placeholder="add your text" class="description col-md-10 "></input>
+                <button class="saveBtn rounded-right save col-md-1"><span class="oi oi-data-transfer-upload"></span>
+                    Save</button>
             </div>
 
-            <div id="hour18" class="row time-block">
+            <div id="hour18" class="rounded m-2 p-2 row time-block">
                 <div class="hour card-header text-light col-md-1 hour">6 PM</div>
-                <input class="description col-md-10"></input>
-                <button class="saveBtn col-md-1">Save</button>
+                <input type="text" placeholder="add your text" class="description col-md-10"></input>
+                <button class="saveBtn rounded-right save col-md-1"><span class="oi oi-data-transfer-upload"></span>
+                    Save</button>
             </div>
 
-            <div id="hour19" class="row time-block">
+            <div id="hour19" class="rounded m-2 p-2 row time-block">
                 <div class="hour card-header text-light col-md-1 hour ">7 PM</div>
-                <input class="description col-md-10"></input>
-                <button class="saveBtn col-md-1">Save</button>
+                <input type="text" placeholder="add your text" class="description col-md-10"></input>
+                <button class="saveBtn rounded-right save col-md-1"><span class="oi oi-data-transfer-upload"></span>
+                    Save</button>
             </div>
 
 

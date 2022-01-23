@@ -2,11 +2,13 @@
 
 var colorEl = document.getElementById('color');
 
-var dateNow = moment().format('MMMM Do YYYY, h:mm:ss a');
+var dateNow = moment().format('dddd - MMM Do YY');
 $("#today").text(dateNow);
 
-var dayNow = moment().format("MMM Do YY");
+var dayNow = moment().format("MMM Do YY h:mm:ss");
 $("#day").text(dayNow);
+
+ 
 
 
 /// set up save button to listen to click and save item in description
@@ -55,10 +57,6 @@ if (timeBlock < currentTime) {
 }
 
 
-
-
-
-
 /// Put info into #hour_with description from localstorage with value with Key "hour_"
 $("#hour8 .description").val(localStorage.getItem("hour8"));
 $("#hour9 .description").val(localStorage.getItem("hour9"));
@@ -80,5 +78,5 @@ $("#hour19 .description").val(localStorage.getItem("hour19"));
 timeTheme()
 
 
-
 });
+
